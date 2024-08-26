@@ -1,10 +1,16 @@
+var appId = 'abc';
+var button = document.querySelector('button');
 function add(n1, n2) {
-    if (typeof n1 !== 'number' || typeof n2 !== 'number') {
-        throw new Error('Incorrect input!');
+    if (n1 + n2 > 0) {
+        return n1 + n2;
     }
-    return n1 + n2;
+    return;
 }
-var number1 = 5;
-var number2 = 2.8;
-var result = add(number1, number2);
-console.log(result);
+function clickHandler(message) {
+    // let userName = 'Max';
+    console.log('Clicked! ' + message);
+}
+// a comment
+if (button) {
+    button.addEventListener('click', clickHandler.bind(null, "You're welcome!"));
+}
