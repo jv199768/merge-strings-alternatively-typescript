@@ -1,19 +1,24 @@
 {
-  "name": "understanding-typescript",
+  "name": "nodejs-typescript",
   "version": "1.0.0",
-  "description": "Understanding TypeScript Course Setup",
-  "main": "app.js",
+  "main": "index.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "typescript",
-    "course"
-  ],
-  "author": "Maximilian Schwarzmüller",
+  "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@aws-amplify/backend": "^1.0.2",
+    "@aws-amplify/ui-react": "^6.1.12",
+    "node-fetch": "^3.3.1",
+    "yarn": "^1.22.22"
+  },
   "devDependencies": {
-    "lite-server": "^2.5.4"
-  }
+    "@types/node": "^20.10.0",
+    "lite-server": "^2.6.1",
+    "tsx": "^4.7.1"
+  },
+  "keywords": [],
+  "description": ""
 }

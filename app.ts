@@ -1,24 +1,16 @@
-// Code goes here!
-type Admin = {
-	name: string;
-	privileges: string[];
-};
+function Logger (constructor: Function) {
+	console.log('Logging...');
+	console.log(constructor); 
+}
 
-type Employee = {
-	name: string;
-	startDate: Date;
-};
+@Logger
+class Person {
+	name = 'Max';
+	constructor(){
+		console.log('Creating person object...');
+	}
+}
 
-
-type ElevatedEmployee = Admin & Employee;
-
-const e1: ElevatedEmployee = {
-  name: 'Max',
-  privileges: ['create-server'],
-  startDate: new Date()
-};
-
-type Combinable = string | number;
-type Numeric = number | boolean;
-
-type Universal = Combinable & Numeric;
+const pers = new Person();
+console.log(pers);
+	
